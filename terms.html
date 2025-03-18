@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShieldBotはDiscordサーバーを守るための最強のNuke対策Botです。Nuke攻撃からサーバーを守り、リアルタイムで監視します。">
+    <meta name="keywords" content="Discord, Nuke, Bot, 防止, シールド">
+    <meta name="author" content="紅蓮ノヴァ">
+    <meta property="og:title" content="ShieldBot - Nuke対策Bot">
+    <meta property="og:description" content="Discordサーバーを守るための最強のNuke対策Bot。">
+    <meta property="og:image" content="your-image.jpg">
+    <meta property="og:url" content="https://your-site.com">
+    <title>ShieldBot - Nuke攻撃対策</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-fa-kit.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content-box {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        .nav-menu li {
+            margin-right: 20px;
+        }
+        .nav-menu li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        .nav-menu li a:hover {
+            color: #3b82f6;
+        }
+        .hamburger.active + .nav-menu {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="flex justify-between items-center px-8 py-4 bg-[#1e293b] shadow-md relative">
+        <h1 class="text-2xl font-bold"><i class="fas fa-shield-alt"></i> ShieldBot</h1>
+        <div class="hamburger text-3xl cursor-pointer">
+        </div>
+        <nav>
+            <ul class="nav-menu flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-400">ホーム</a></li>
+                <li><a href="terms.html" class="hover:text-blue-400">利用規約</a></li>
+                <li><a href="privacy.html" class="hover:text-blue-400">プライバシーポリシー</a></li>
+                <li><a href="https://discord.gg/CVRsP4sDTV" class="hover:text-blue-400">サポート</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="section">
+    <h2 class="section-title">利用規約</h2>
+    <div class="content-box">
+        <h3 class="text-xl font-bold">1. はじめに</h3>
+        <p>本利用規約（以下「規約」といいます）は、ShieldBot（以下「本サービス」といいます）の利用に関する条件を定めたものです。ユーザーは本サービスを利用することにより、本規約に同意したものとみなされます。</p>
+
+        <h3 class="text-xl font-bold mt-6">2. 利用資格</h3>
+        <p>本サービスは、Discordの利用規約に基づいて運営されています。ユーザーは、Discordの利用規約を遵守することが求められます。</p>
+
+        <h3 class="text-xl font-bold mt-6">3. サービスの内容</h3>
+        <p>ShieldBotは、DiscordサーバーのNuke攻撃からの防御、チャンネル操作の監視、リアルタイムでの警告などを提供するBotです。本サービスを使用することで、サーバー管理者はより安全にサーバーを運営できます。</p>
+
+        <h3 class="text-xl font-bold mt-6">4. ユーザーの責任</h3>
+        <p>ユーザーは、本サービスを使用するにあたり、以下の責任を負うものとします：</p>
+        <ul class="list-disc pl-6">
+            <li>本サービスの利用が合法的であることを確認すること</li>
+            <li>他のユーザーのプライバシーを尊重し、情報を不正に収集しないこと</li>
+            <li>本サービスを使用して行う活動が、Discordの利用規約およびその他の適用される法令に準拠していること</li>
+            <li>本サービスを不正に操作または変更しないこと</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6">5. 禁止事項</h3>
+        <p>ユーザーは以下の行為を行ってはなりません：</p>
+        <ul class="list-disc pl-6">
+            <li>本サービスを用いてDiscordサーバーを攻撃、悪用すること</li>
+            <li>他のユーザーに対して不正アクセスを試みること</li>
+            <li>本サービスを通じて悪意のあるコードやスクリプトを配布すること</li>
+            <li>本サービスを通じてサーバーの安全を破壊または妨害する行為</li>
+            <li>他のユーザーを脅迫、差別、または嫌がらせ行為を行うこと</li>
+            <li>法令に違反する活動を行うこと</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6">6. 免責事項</h3>
+        <p>本サービスは提供される「現状のまま」であり、運営者は本サービスの正確性、完全性、または有用性に関して一切の保証を行いません。また、ユーザーによる本サービスの利用に起因するすべての損害について、運営者は一切責任を負いません。</p>
+
+        <h3 class="text-xl font-bold mt-6">7. 規約の変更</h3>
+        <p>運営者は、事前の通知なしに本規約を変更する権利を有します。変更後に本サービスを利用した場合、変更後の規約に同意したものとみなされます。</p>
+
+        <h3 class="text-xl font-bold mt-6">8. ユーザーのデータの取扱い</h3>
+        <p>運営者は、ユーザーのプライバシーを尊重し、個人情報や利用データを適切に保護します。個人情報の取り扱いについては、別途プライバシーポリシーに基づきます。</p>
+
+        <h3 class="text-xl font-bold mt-6">9. サービスの中断・終了</h3>
+        <p>運営者は、以下のいずれかの場合にサービスの一時的な中断または終了を行うことがあります：</p>
+        <ul class="list-disc pl-6">
+            <li>システムメンテナンスやアップデートのため</li>
+            <li>不正利用が確認された場合</li>
+            <li>その他、運営者がサービスを提供することが困難であると判断した場合</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6">10. 利用契約の解除</h3>
+        <p>運営者は、ユーザーが本規約に違反した場合、または本サービスを不正に利用していると判断した場合、事前の通知なしに利用契約を解除することができます。</p>
+
+        <h3 class="text-xl font-bold mt-6">11. 著作権</h3>
+        <p>本サービスに関連するすべてのコンテンツ（コード、デザイン、ロゴ、マークなど）の著作権は、運営者またはそのライセンサーに帰属します。無断で使用することは禁止されています。</p>
+
+        <h3 class="text-xl font-bold mt-6">12. 紛争解決</h3>
+        <p>本規約に関する紛争が生じた場合、日本国の法令に基づき、運営者が所在する地域の裁判所を専属的な管轄裁判所とします。</p>
+
+        <h3 class="text-xl font-bold mt-6">13. お問い合わせ</h3>
+        <p>本サービスに関するお問い合わせは、公式サポートサーバーにて受け付けています。</p>
+    </div>
+</section>
+<footer class="bg-[#1e293b] py-10 px-8 text-gray-300">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left mb-6 md:mb-0">
+            <h2 class="text-2xl font-bold"><i class="fas fa-shield-alt"></i> ShieldBot</h2>
+            <p class="text-sm mt-2">最強のNuke対策を提供するDiscord Bot</p>
+        </div>
+        <nav class="flex space-x-6">
+            <a href="index.html" class="hover:text-blue-400">ホーム</a>
+            <a href="terms.html" class="hover:text-blue-400">利用規約</a>
+            <a href="privacy.html" class="hover:text-blue-400">プライバシーポリシー</a>
+            <a href="https://discord.gg/CVRsP4sDTV" class="hover:text-blue-400">サポート</a>
+        </nav>
+        <div class="text-center md:text-right">
+            <p class="text-sm">&copy; 2025 ShieldBot. All rights reserved.</p>
+            <p class="text-sm">開発者: 紅蓮ノヴァ</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
